@@ -28,13 +28,13 @@ async function sentMessage(message) {
         //si el mensaje empieza por adduser añadie el número de teléfono a la lista de usuarios
         if (message.body.startsWith('adduser')){
             let user = message.body.substring(8);            
-            configWhatsTeDigo.addUserChatGpt(user);
+            await configWhatsTeDigo.addUserChatGpt(user);
             SendConfig();
         }
         //si el mensaje empieza por deluser elimina el número de teléfono de la lista de usuarios
         if (message.body.startsWith('deluser')){
             let user = message.body.substring(8);           
-            configWhatsTeDigo.deleteUserChatGpt(user);
+            await configWhatsTeDigo.deleteUserChatGpt(user);
             SendConfig();
         }
         //si el mensaje empieza por list muestra la lista de usuarios
@@ -45,7 +45,7 @@ async function sentMessage(message) {
         //si el mensaje empieza por allresponsesgpt cambia el valor de allResponsesUsesGpt
         if (message.body.startsWith('allresponsesgpt')){
             let value = message.body.substring(16);
-            configWhatsTeDigo.setAllResponsesUsesGpt(value);
+            await configWhatsTeDigo.setAllResponsesUsesGpt(value);
             SendConfig();
         }
     }
