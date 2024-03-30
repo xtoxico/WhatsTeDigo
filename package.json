@@ -1,0 +1,26 @@
+{
+  "name": "whatstedigo",
+  "version": "1.0.0",
+  "description": "Daemon for automatically replying to WhatsApp messager using ChatGPT.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xtoxico/WhatsTeDigo.git"
+  },
+  "author": "Antonio Tirado",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/xtoxico/WhatsTeDigo/issues"
+  },
+  "homepage": "https://github.com/xtoxico/WhatsTeDigo#readme",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "prompt-gpt": "^1.0.4",
+    "qrcode-terminal": "^0.12.0",
+    "redis": "3.1.2",
+    "whatsapp-web.js": "^1.23.0"
+  }
+}
