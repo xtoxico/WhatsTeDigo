@@ -21,6 +21,6 @@
     "prompt-gpt": "^1.0.4",
     "qrcode-terminal": "^0.12.0",
     "redis": "3.1.2",
-    "whatsapp-web.js": "^1.23.0"
+    "whatsapp-web.js": "github:pedroslopez/whatsapp-web.js#webpack-exodus"
   }
 }
